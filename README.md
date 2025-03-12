@@ -27,3 +27,5 @@
 
 - <https://www.leadleo.com/ai-prompts-test>
 - <https://www.frostchina.com/ai-prompts-test>
+
+#### 调用方式

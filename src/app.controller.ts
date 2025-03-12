@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 
 @Controller('v1')
 export class AppController {
-  constructor(private readonly appService: AppService) { }
+  constructor(private readonly appService: AppService) {}
 
   @Get()
   getHello(): string {
@@ -16,9 +16,10 @@ export class AppController {
   }
 
   @Get('get_questions')
-  getQuestions(@Query('category') category: string,
-    @Query('lane') lane?: string): string[] {
+  getQuestions(
+    @Query('category') category: string,
+    @Query('lane') lane?: string,
+  ): string[] {
     return this.appService.getQuestions(category, lane);
   }
-
 }
